@@ -62,10 +62,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .hint .mobile {
   display: none;
 }
+
 .hint button.mobile {
   width: 200px;
   height: 50px;
@@ -84,14 +88,16 @@ body {
 
 }
 
-@media only screen and (max-width:900px) {
+@media screen and (max-width:900px) {
 
     
-  .hint .mobile {
+  .hint p.mobile {
     display: inline;
   }
-
-  
+    
+  .hint button.mobile {
+    display: inline;
+  }
 
   .hint .desktop {
     display: none;
