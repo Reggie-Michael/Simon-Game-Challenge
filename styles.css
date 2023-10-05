@@ -1,6 +1,11 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 #level-title {
