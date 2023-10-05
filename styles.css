@@ -57,3 +57,45 @@ body {
   color: aliceblue;
   font-size: larger;
 }
+
+.hint  {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.hint .mobile {
+  display: none;
+}
+.hint button.mobile {
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-blend-mode: soft-light;
+  border: none;
+  box-shadow: 1px 4px 1px rgba(110, 108, 108, 0.63);
+}
+
+.hint button.mobile:active {
+  transform: translate(0px, 3px);
+  box-shadow: 1px 1px 2px rgba(44, 44, 44, 0.774);
+  outline: 1px #106fd4a6;
+
+}
+
+@media only screen and (max-width:900px) {
+
+    
+  .hint .mobile {
+    display: inline;
+  }
+
+  
+
+  .hint .desktop {
+    display: none;
+  }
+
+
+}

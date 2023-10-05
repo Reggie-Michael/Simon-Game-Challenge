@@ -58,6 +58,13 @@ $(document).keydown(function() {
      }
 });
 
+$("button#play").click(function() {
+     if(levelNo <= 0){
+          nextSequence();
+          $("h1#level-title").text("Level " + levelNo)
+     }
+});
+
 function checkAnswer(currentLevel){
      if(gamePattern[currentLevel] === userClickedPattern[currentLevel]){
           if(gamePattern.length === userClickedPattern.length){
